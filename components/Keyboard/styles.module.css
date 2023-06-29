@@ -1,0 +1,56 @@
+.keyboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.key{
+    background-color: rgb(241, 241, 241);
+    border: 0;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.keyTransitionEnter {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  .keyTransitionEnterActive {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 200ms, transform 200ms;
+  }
+  
+  .keyTransitionExit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .keyTransitionExitActive {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 200ms, transform 200ms;
+  }
+  
+  .key.active {
+    animation: pulse 1s infinite;
+    color: rgb(3, 0, 161);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,59 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.phrase {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 0 15%;
+  }
+
+  .correct {
+    color: green;
+    background-color: rgba(21, 255, 0, 0.055);
+  }
+  
+  .incorrect {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.055);
+  }
+  
+  .input {
+    opacity: 0; /* Torna o campo de entrada invisível */
+    position: absolute; /* Remove o campo de entrada do fluxo normal do documento */
+    pointer-events: none; /* Desativa eventos de clique e digitação no campo de entrada */
+  }
+  .progress {
+    background-color: rgba(0, 0, 255, 0.055);
+    color: rgb(0, 0, 0);
+    text-decoration: underline; /* Adiciona uma linha de progresso usando sublinhado */
+  }
+  
+  .pontos{
+    display: flex;
+  }
+
+  .acertos{
+    color: green;
+    border: 1px solid green;
+  }
+
+  .erros{
+    color: red;
+    border: 1px solid red;
+  }
+
+  .button{
+    border: 0;
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+  }
+
+  .item{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
